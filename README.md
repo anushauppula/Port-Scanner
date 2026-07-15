@@ -1,7 +1,13 @@
 # Fast Multi-Threaded Port Scanner 🚀
 
 ## 📌 About
-A high-speed TCP port scanner built in Python using socket programming and multi-threading. Scans 1000 ports in ~2 seconds vs 500+ seconds with single-threaded approach.
+A high-speed TCP port scanner built in Python using socket programming and multi-threading. Scans 1000 ports in ~2 seconds vs 500+ seconds with single-threaded approach.This confirms the scanner correctly identifies open ports at the network packet level.
+
+### How to Reproduce:
+1. Start Wireshark: `sudo wireshark`
+2. Capture on `Loopback: lo` with filter `tcp.port == 445`
+3. Run scanner on `127.0.0.1` port `445`
+4. Observe SYN/SYN-ACK handshake in Wireshark
 
 ## ⚡ Features
 - **300 Threads**: High speed scanning using `threading` module
