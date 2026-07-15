@@ -13,5 +13,18 @@ A high-speed TCP port scanner built in Python using socket programming and multi
 
 ## 🔧 Tech Stack
 Python 3, `socket`, `threading`, `queue`, `time`
+## ⚠️ Legal & Safe Testing
+
+**IMPORTANT:** Only scan IPs you own or have explicit permission to test.
+
+### How to Test Safely:
+
+**Option 1: Scan Your Own Machine**
+```bash
+python port_scanner.py 127.0.0.1
 
 ## 📸 Sample Output
+Scanning 127.0.0.1 ports 1-100...
+Port 22: OPEN | SSH-2.0-OpenSSH_8.2
+Port 80: OPEN | HTTP
+Scan completed in 0.34 seconds
